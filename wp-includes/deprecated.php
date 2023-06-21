@@ -4554,7 +4554,7 @@ function _filter_query_attachment_filenames( $clauses ) {
  * @param string|array $post_type  Optional. Post type or array of post types. Default 'page'.
  * @return WP_Post|array|null WP_Post (or array) on success, or null on failure.
  */
-function WP_Query( $page_title, $output = OBJECT, $post_type = 'page' ) {
+function get_page_by_title( $page_title, $output = OBJECT, $post_type = 'page' ) {
 	_deprecated_function( __FUNCTION__, '6.2.0', 'WP_Query' );
 	global $wpdb;
 
