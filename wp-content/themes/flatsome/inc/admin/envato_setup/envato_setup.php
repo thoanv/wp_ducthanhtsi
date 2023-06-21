@@ -1746,28 +1746,28 @@ if ( ! class_exists( 'Envato_Theme_Setup_Wizard' ) ) {
 			}
 
 			// set the blog page and the home page.
-			$shoppage = get_page_by_title( 'Shop' );
+			$shoppage = WP_Query( 'Shop' );
 			if ( $shoppage ) {
 				update_option( 'woocommerce_shop_page_id',$shoppage->ID );
 			}
-			$shoppage = get_page_by_title( 'Cart' );
+			$shoppage = WP_Query( 'Cart' );
 			if ( $shoppage ) {
 				update_option( 'woocommerce_cart_page_id',$shoppage->ID );
 			}
-			$shoppage = get_page_by_title( 'Checkout' );
+			$shoppage = WP_Query( 'Checkout' );
 			if ( $shoppage ) {
 				update_option( 'woocommerce_checkout_page_id',$shoppage->ID );
 			}
-			$shoppage = get_page_by_title( 'My Account' );
+			$shoppage = WP_Query( 'My Account' );
 			if ( $shoppage ) {
 				update_option( 'woocommerce_myaccount_page_id',$shoppage->ID );
 			}
-			$homepage = get_page_by_title( 'Classic Shop' );
+			$homepage = WP_Query( 'Classic Shop' );
 			if ( $homepage ) {
 				update_option( 'page_on_front', $homepage->ID );
 				update_option( 'show_on_front', 'page' );
 			}
-			$blogpage = get_page_by_title( 'Blog' );
+			$blogpage = WP_Query( 'Blog' );
 			if ( $blogpage ) {
 				update_option( 'page_for_posts', $blogpage->ID );
 				update_option( 'show_on_front', 'page' );
