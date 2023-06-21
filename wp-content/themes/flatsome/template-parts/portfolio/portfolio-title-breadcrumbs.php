@@ -1,3 +1,12 @@
+<?php
+/**
+ * Portfolio title breadcrumbs.
+ *
+ * @package          Flatsome\Templates
+ * @flatsome-version 3.16.0
+ */
+
+?>
 <div class="page-title normal-title portfolio-breadcrumb-title">
 	<div class="page-title-inner container  flex-row medium-flex-wrap medium-text-center">
 	 	<div class="flex-col flex-grow">
@@ -6,5 +15,5 @@
 	 	<div class="flex-col flex-right">
 			<?php get_flatsome_portfolio_breadcrumbs(); ?>
 		</div>
-	</div><!-- flex-row -->
-</div><!-- .page-title -->
+	</div>
+</div>

@@ -27,6 +27,15 @@ $options = array(
               'true'  => array( 'title' => 'On'),
           ),
       ),
+
+	'lightbox_image_size' => array(
+	    'type'       => 'select',
+	    'heading'    => __( 'Lightbox Image Size' ),
+	    'conditions' => 'lightbox == "true"',
+	    'default'    => 'large',
+	    'options'    => flatsome_ux_builder_image_sizes(),
+    ),
+
   ),
 ),
 'layout_options' => require( __DIR__ . '/commons/repeater-options.php' ),

@@ -32,6 +32,13 @@ add_ux_builder_shortcode( 'logo',
 				'heading' => 'Image',
 				'default' => '',
 			),
+			'image_size' => array(
+				'type'       => 'select',
+				'heading'    => 'Image Size',
+				'param_name' => 'image_size',
+				'default'    => 'original',
+				'options'    => flatsome_ux_builder_image_sizes(),
+			),
 			'title'  => array(
 				'type'    => 'textfield',
 				'heading' => __( 'Title' ),
